@@ -1,0 +1,454 @@
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        position: relative;
+    }
+    header{
+        @include fn(100%,pxTorem(40px));
+        display: flex;  
+        font-size: pxTorem(20px);
+        line-height:pxTorem(40px);
+        span{
+            flex: 1;
+            text-align: center;
+            line-height: 40px;
+            line-height:pxTorem(40px);
+        }
+        div{
+            flex: 1;
+        }
+        .add{
+            flex: 1.8;
+        }
+    }
+    .nav{
+        @include fn(100%,pxTorem(100px));
+        border-bottom: 1px solid #DCDCDC;
+        display: flex;
+        .item1{
+            flex: .5;
+            text-align: center;
+            line-height: pxTorem(100px);
+            color: #DCDCDC;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;;
+            &>span{
+                flex: 1;   
+                @include fn(100%,pxTorem(20px));
+                line-height:pxTorem(20px) ;
+                text-align: center;
+            }
+        }
+        &>.active{
+            color: #0B6142
+        }
+    }
+    .subnav{
+        @include fn(100%,pxTorem(56px));
+        position: relative;
+        .center{
+            @include fn(50%,pxTorem(30px));
+            border: 1px solid #096241;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            border-radius: pxTorem(30px);
+            line-height: pxTorem(30px);
+            overflow: hidden;
+            span{
+                flex: 1;
+                text-align: center;
+
+            }
+            .active{
+                    background: #096241;
+                    color: white;
+                }
+        }
+        .poa{
+            position: absolute;
+            right: 0;;
+            top: 0;
+            @include fn(20%,pxTorem(56px));
+            display: flex;
+            z-index: 100000;
+            line-height: pxTorem(56px);
+            span{
+                flex: 1;
+                text-align: center;
+            }
+        }
+    }
+    .box{
+        flex: 1; 
+        background: #F7F8F8;
+        overflow-y: scroll;
+        .list{
+            @include fn(100%,pxTorem(120px));
+            margin-bottom: 10px;
+            background: white;
+        }
+    }
+    // .wrap>div{
+    //     flex: 1;
+    //     overflow: hidden;
+    //     display: flex;
+    //     flex-direction: column;
+    //     .wife{
+    //         flex: 1;
+    //         display: flex;
+    //         flex-direction: column;
+    //     }
+    // }
+    .login{
+        background: #F8F8F6;
+        .phone,.number{
+            @include fn(90%,pxTorem(60px));
+            line-height: pxTorem(60px);
+            padding: 0 5%;     
+            input{
+                @include fn(100%,pxTorem(30px));
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        .btn{
+            @include fn(100%,pxTorem(30px));
+            text-align: center;
+            margin-top: pxTorem(50px);
+            button{
+                width: 60%;
+                border-radius: 20px;
+                outline: 0;
+                border: 0;
+                height: pxTorem(30px);
+            }
+        }
+        .user{
+            @include fn(100%,pxTorem(30px));
+            text-align: center;
+            margin-top: pxTorem(30px);
+            color: #08AB65;
+        }
+        .discript{
+            @include fn(100%,pxTorem(30px));
+            text-align: center;
+            color: #737371;
+            margin-top: pxTorem(230px);
+        }
+        .ico{
+            @include fn(100%,pxTorem(30px));
+            text-align: center;
+        }
+    }
+
+
+
+
+    .login_Nav{
+        @include fn(95%,pxTorem(80px));
+        background: white;
+        padding-left: 5%;
+        .times{
+            @include fn(100%,pxTorem(20px));
+            font-size: 20px;
+        }
+        h2{
+            font-size: pxTorem(30px);
+            font-weight: bold;
+        }
+    }
+    .homewrap{
+        position: relative;
+    }
+    .task{
+        position: absolute;
+        background: red;
+        @include fn(pxTorem(100px),pxTorem(40px));
+        border-radius: pxTorem(100px);
+        display: flex;
+        bottom: pxTorem(50px);
+        right: pxTorem(50px);
+        .tasks{
+            @include fn(100%,100%);
+            background:#096241;
+            color: white;
+            display: flex;
+            span{
+                flex: 1;
+                text-align: center;
+                line-height:pxTorem(40px) ;
+            }
+            p{
+                flex: 2;
+                line-height:pxTorem(40px) ;
+                font-size: pxTorem(14px) ;
+                
+            }
+        }
+        
+    }
+.sort{
+    display: flex;
+    flex-direction: column;
+    .mian_choose{
+        flex: 1;
+    }
+    .choose{
+        @include fn(95%,pxTorem(100px));
+        color: #7E7E7E;
+        .time{
+            @include fn(100%,pxTorem(30px));
+            padding-left: 5%;
+            line-height: pxTorem(30px);
+        }
+        .choose_choose{
+            @include fn(95%,pxTorem(30px));
+            padding-left: 5%;
+            margin-top: pxTorem(10px);
+            display: flex;
+            justify-content: space-between;
+            span{
+                @include fn(48%,pxTorem(30px));
+                line-height: pxTorem(30px);
+                background: #F5F5F5;
+                text-align: center;
+                
+            }
+            .active{
+                background: #096241;
+                color: white;
+            }
+        }
+    }
+    .footer{
+        @include fn(100%,pxTorem(40px));
+        display: flex;
+        background: #096242;
+        font-size:  pxTorem(14px);
+        color: white;
+        .back{
+            flex: 1;
+            text-align: center;
+            color:#096242;
+            background: white;
+            line-height: pxTorem(40px);
+        }
+        .sure{
+            flex: 3;
+            text-align: center;
+            line-height: pxTorem(40px);
+        }
+    }
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    .header{
+        background: #0B6242;
+        color: white;
+    }
+
+    .detailhead{
+        flex: 1;
+        background: #F7F7F8;
+        display: flex;
+        flex-direction: column;
+        // padding-top: pxTorem(100px);
+        // overflow-y: auto;
+        .dehead{
+            @include fn(100%,pxTorem(140px));
+            background: #0B6242;
+            display: flex;
+            font-size: pxtorem(14px);
+            flex-direction: column;
+            border-radius: 0 0 40px 40px ;
+            .deheadbotton{
+                @include fn(100%,pxTorem(40px));
+                background: #0B6242;
+                border-radius: 0 0 100px 100px;
+                border-top: 1px solid #0B6242;
+                flex: 1;
+                display: flex;
+                dl{
+                    flex: 1;
+                    display: flex;
+                    dt{
+                        flex: 1;
+                        position: relative;
+                        .img{
+                            position: absolute;
+                            @include fn(50%,60%);
+                            left: 50px;
+                            top: 50px;
+                            transform: translate(-50%,-50%);
+                            border-radius: 50%;
+                            overflow: hidden;
+                            img{
+                                @include fn(100%,100%);
+                            }
+                        }
+                    }
+                    dd{
+                        flex:2;
+                        display: flex;
+                        flex-direction: column;
+                        // padding: pxTorem(5px) 0;
+                        p{
+                            flex: 1;
+                            display: flex;
+                            span{
+                                flex: 1;
+                                line-height: pxTorem(50px);
+                                font-size: pxTorem(16px);
+                                color: #97D2BC;
+                            }
+                            .first{
+                                font-size: pxTorem(14px);
+                            }
+                        }
+                    }
+                }
+                .iconfont{
+                    @include fn(pxTorem(40px),100%);
+                    line-height: pxTorem(100px);
+                    color: white;
+                }
+            }
+            .bb{
+                @include fn(100%,pxTorem(40px));
+            }
+        }
+        .bottomdetail{
+            flex: 1;
+            position: relative;
+            padding:pxTorem(270px) 5% 0;
+            .msg{
+                @include fn(90%,pxTorem(280px));
+                background: white;
+                position: absolute;
+                top: -40px;
+                border-radius: 10px;
+                p{
+                    @include fn(90%,pxTorem(40px));
+                    padding: 0 5%;
+                    line-height:pxTorem(40px);
+                    font-size: pxTorem(16px);
+                    color: #B2B2B2;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #eee;
+                    .ms{
+                        color: #727272;
+                    }
+                }
+            }
+            .work{
+                @include fn(100%,pxTorem(180px));
+                background: white;
+                color: #575757;
+                border-radius: 10px;
+                .work_k{
+                    @include fn(90%,pxTorem(40px));
+                    padding: 0 5%;
+                    line-height:pxTorem(40px);
+                    font-size: pxTorem(16px);
+                    border-bottom: 1px solid #eee;
+                }
+                div{
+                    padding: pxTorem(20px);
+                    
+                }
+            }
+            .up{
+                @include fn(100%,auto);
+                margin-top: pxTorem(20px);
+                background: white;
+                color: #575757;
+                border-radius: 10px;
+                .upimg{
+                    @include fn(90%,pxTorem(40px));
+                    padding: 0 5%;
+                    line-height:pxTorem(40px);
+                    font-size: pxTorem(16px);
+                    border-bottom: 1px solid #eee;
+                    display: flex;
+                    .iconfont{
+                        color: #FFD32B;
+                        font-size: pxTorem(30px);
+                    }
+                }
+                .imgs{
+                    display: flex;
+                    padding: 5%;
+
+                    img{
+                        @include fn(pxTorem(100px),pxTorem(100px));
+                    }
+                    ul{
+                        @include fn(100%,100%);
+                        display: flex;
+                        flex-wrap: wrap;
+                        li{
+                            @include fn(pxTorem(100px),pxTorem(100px));
+                            border: 1px solid #ccc;
+                            position: relative;
+                            div{
+                                @include fn(pxTorem(100px),pxTorem(100px));
+                                text-align: center;
+                                line-height: pxTorem(100px);
+                                font-size: pxTorem(50px);
+                            }
+                            input{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                @include fn(pxTorem(100px),pxTorem(100px));
+                                opacity: 0;
+                                
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .tnt{
+                @include fn(100%,pxTorem(60px));                    
+                color: #575757;
+                border-radius: 10px;
+                margin-top: pxTorem(20px);
+            }
+            
+        }
+        
+    }
+    .footer{
+        @include fn(100%,pxTorem(60px));                    
+        color: #575757;
+        margin-top: pxTorem(20px);
+        // position: absolute;
+        // left: 0;
+        display: flex;
+        font-size: pxTorem(16px);
+        .out{
+            flex: 1;
+            text-align: center;
+            line-height: pxTorem(60px);
+            color: #0B6242;
+        }
+        .sub{
+            flex: 2;
+            text-align: center;
+            line-height: pxTorem(60px);
+            background: #0B6242;
+            color: white;
+        }
+    }
+}
+
+
