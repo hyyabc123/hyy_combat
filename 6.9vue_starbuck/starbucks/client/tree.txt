@@ -1,0 +1,117 @@
+卷 Windows 的文件夹 PATH 列表
+卷序列号为 CC7A-4265
+C:.
+│  .babelrc
+│  .editorconfig
+│  .gitignore
+│  .postcssrc.js
+│  index.html
+│  package-lock.json
+│  package.json
+│  README.md
+│  tree.txt
+│  
+├─build
+│      build.js
+│      check-versions.js
+│      logo.png
+│      utils.js
+│      vue-loader.conf.js
+│      webpack.base.conf.js
+│      webpack.dev.conf.js
+│      webpack.prod.conf.js
+│      
+├─config
+│      dev.env.js
+│      index.js
+│      prod.env.js
+│      
+├─src
+│  │  App.vue
+│  │  main.js
+│  │  
+│  ├─api
+│  │      index.js
+│  │      
+│  ├─components
+│  │  │  Header.vue
+│  │  │  
+│  │  └─Dialog.vue
+│  │          index.vue
+│  │          
+│  ├─plugins
+│  │      base-ui.js
+│  │      
+│  ├─router
+│  │      index.js
+│  │      
+│  ├─static
+│  │  ├─css
+│  │  │      style.scss
+│  │  │      
+│  │  └─images
+│  │          1.jpg
+│  │          2.jpg
+│  │          
+│  ├─store
+│  │  │  index.js
+│  │  │  
+│  │  └─modules
+│  │          Info.js
+│  │          
+│  ├─uitle
+│  │  │  flexible.js
+│  │  │  
+│  │  ├─fonts
+│  │  │      demo.css
+│  │  │      demo_fontclass.html
+│  │  │      iconfont.css
+│  │  │      iconfont.eot
+│  │  │      iconfont.js
+│  │  │      iconfont.svg
+│  │  │      iconfont.ttf
+│  │  │      iconfont.woff
+│  │  │      ygyxsziti2.0.ttf
+│  │  │      
+│  │  ├─request
+│  │  │      index.js
+│  │  │      
+│  │  └─scss
+│  │          common.css
+│  │          common.min.css
+│  │          common.scss
+│  │          _mixin.css
+│  │          _mixin.min.css
+│  │          _mixin.scss
+│  │          
+│  └─views
+│      ├─apply
+│      │      index.vue
+│      │      ischeck.js
+│      │      
+│      ├─detail
+│      │      index.vue
+│      │      
+│      ├─dialog
+│      │      index.vue
+│      │      
+│      ├─home
+│      │  │  index.vue
+│      │  │  
+│      │  └─components
+│      │          list.vue
+│      │          Mynav.vue
+│      │          Subnav.vue
+│      │          
+│      ├─login
+│      │      index.vue
+│      │      
+│      ├─search
+│      │      index.vue
+│      │      
+│      └─sort
+│              index.vue
+│              
+└─static
+        .gitkeep
+        
